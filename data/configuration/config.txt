@@ -1,0 +1,1 @@
+output_path = /Users/peterrucker/PycharmProjects/Image_circumnavigator/data/output
