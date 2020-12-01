@@ -1,1 +1,1 @@
-output_path = /Users/peterrucker/PycharmProjects/Image_circumnavigator/data/output
+output_path = C:\Users\nekos\PycharmProjects\image_circumnavigator\data\output
