@@ -6,12 +6,6 @@ from os import path
 import pandas as pd
 class Converter(object):
 
-    datetime_object = datetime.datetime.now()
-    hour, minute, second = str(datetime_object.hour).zfill(2), str(datetime_object.minute).zfill(2), str(
-        datetime_object.second).zfill(2)
-    date, year, month = str(datetime_object.day).zfill(2), str(datetime_object.year), str(
-        datetime_object.month).zfill(2)
-
     @staticmethod
     def process(inputfile,output_path):
         table = Converter.import_from_file(inputfile)
@@ -41,25 +35,30 @@ class Converter(object):
         else:
             print(f"Skipping unknown filetype: {inputfile}")
             return
-
+        df.dropna(subset=[1],inplace=True)
         data_table = df.values.tolist()
 
         return data_table
 
     @staticmethod
     def output_csv(output_path,input_table):
+        datetime_object = datetime.datetime.now()
+        hour, minute, second = str(datetime_object.hour).zfill(2), str(datetime_object.minute).zfill(2), str(
+            datetime_object.second).zfill(2)
+        date, year, month = str(datetime_object.day).zfill(2), str(datetime_object.year), str(
+            datetime_object.month).zfill(2)
         header_text = "Frontend Data;          Version;          V1.06;;;;;;;;;;;;;;;;\n\n\n" \
                       "Date;SampleID;SIType;WNo;SlID;TType;StTiter;Time;SampleType;PName;Surname;DayOfB;MonOfB;YearOfB;PatientID;Comm\n"
         test_system = input_table[1][5]
         output_table = []
         for line in input_table[1:]:
-            line[0] = f"{Converter.month}/{Converter.date}/{Converter.year}"
-            line[7] = f"{Converter.hour}:{Converter.minute}:{Converter.second}"
+            line[0] = f"{month}/{date}/{year}"
+            line[7] = f"{hour}:{minute}:{second}"
             output_table.append(";".join(line))
 
-        output_filname = f"isl_{Converter.year}{Converter.month}{Converter.date}_{Converter.hour}{Converter.minute}{Converter.second}_{test_system}_AFT1.csv"
-        with open(path.join(output_path,output_filname), mode="w") as file:
+        output_filename = f"isl_{year}{month}{date}_{hour}{minute}{second}_{test_system}_AFT1.csv"
+        with open(path.join(output_path,output_filename), mode="w") as file:
             file.write(header_text)
             for line in output_table:
                 file.write(line + "\n")
-        print(f"{output_filname} created in Image Navigator.\n")
+        print(f"{output_filename} created in Image Navigator.\n")

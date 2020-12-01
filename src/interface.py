@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, time
 from src.converter import Converter
 if getattr(sys, 'frozen', False):
     # If the application is run as a bundle, the PyInstaller bootloader
@@ -8,8 +8,14 @@ if getattr(sys, 'frozen', False):
 else:
     application_path = os.path.dirname(os.path.abspath(__file__))
 
-def user_interface(input_path, output_path):
-    print("Image Circumnavigator version 0.8\n\n")
+def user_interface(input_path, output_path, logo):
+    with open(logo) as file:
+        for line in file:
+            print(line.strip("\n"))
+    print("\nImage Circumnavigator version 0.8")
+    print("By Peter Rucker")
+    time.sleep(2)
+    os.system('cls')
     return user_menu(input_path,output_path)
 
 def user_menu(input_path, output_path):
@@ -22,7 +28,7 @@ def user_menu(input_path, output_path):
         print(f"[{pos}]: {val[0:-4]}")
     valid_input = False
     while valid_input == False:
-        user_input = input("Please select a number from the choices listed above, or Q to exit: \n")
+        user_input = input("\nPlease select a number from the choices listed above, or Q to exit: \n")
         if user_input == "Q" or user_input == "q":
             sys.exit()
         if not user_input.isnumeric():
