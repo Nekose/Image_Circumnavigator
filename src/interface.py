@@ -12,7 +12,7 @@ def user_interface(input_path, output_path, logo):
     with open(logo) as file:
         for line in file:
             print(line.strip("\n"))
-    print("\nImage Circumnavigator version 0.8")
+    print("\nImage Circumnavigator version 0.83")
     print("By Peter Rucker")
     time.sleep(2)
     os.system('cls')

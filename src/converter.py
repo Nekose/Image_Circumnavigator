@@ -35,7 +35,7 @@ class Converter(object):
         else:
             print(f"Skipping unknown filetype: {inputfile}")
             return
-        df.dropna(subset=[1],inplace=True)
+        df.dropna(subset=[1], inplace=True)
         df.dropna(axis='columns', inplace=True)
         data_table = df.values.tolist()
 
@@ -44,8 +44,8 @@ class Converter(object):
     @staticmethod
     def output_csv(output_path,input_table):
         datetime_object = datetime.datetime.now()
-        hour, minute, second = str(datetime_object.hour).zfill(2), str(datetime_object.minute).zfill(2), str(
-            datetime_object.second).zfill(2)
+        hour, minute, second, microsecond = str(datetime_object.hour).zfill(2), str(datetime_object.minute).zfill(2), str(
+            datetime_object.second).zfill(2),str(datetime_object.microsecond).zfill(2)[2:]
         date, year, month = str(datetime_object.day).zfill(2), str(datetime_object.year), str(
             datetime_object.month).zfill(2)
         header_text = "Frontend Data;          Version;          V1.06;;;;;;;;;;;;;;;;\n\n\n" \
@@ -65,7 +65,7 @@ class Converter(object):
             line[7] = f"{hour}:{minute}:{second}"
             output_table.append(";".join(line))
 
-        output_filename = f"isl_{year}{month}{date}_{hour}{minute}{second}_{test_system}_AFT1.csv"
+        output_filename = f"isl_{year}{month}{date}_{hour}{minute}{second}_{microsecond}_{test_system}_AFT1.csv"
         with open(path.join(output_path,output_filename), mode="w") as file:
             file.write(header_text)
             for line in output_table:
