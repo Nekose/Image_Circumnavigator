@@ -36,6 +36,7 @@ class Converter(object):
             print(f"Skipping unknown filetype: {inputfile}")
             return
         df.dropna(subset=[1],inplace=True)
+        df.dropna(axis='columns', inplace=True)
         data_table = df.values.tolist()
 
         return data_table
@@ -51,6 +52,14 @@ class Converter(object):
                       "Date;SampleID;SIType;WNo;SlID;TType;StTiter;Time;SampleType;PName;Surname;DayOfB;MonOfB;YearOfB;PatientID;Comm\n"
         test_system = input_table[1][5]
         output_table = []
+        for line in input_table[1:]:
+            for pos,value in enumerate(line):
+                if pos == 0 or pos == 7:
+                    continue
+                for character in value:
+                    if not character.isalnum() and character not in "_- ":
+                        print("Invalid character detected. Slide and sample IDs may only contain alphanumeric characters, dashes, or underscores.")
+                        return
         for line in input_table[1:]:
             line[0] = f"{month}/{date}/{year}"
             line[7] = f"{hour}:{minute}:{second}"
