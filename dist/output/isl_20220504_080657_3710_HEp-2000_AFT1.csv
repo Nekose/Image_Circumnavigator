@@ -1,0 +1,102 @@
+Frontend Data;          Version;          V1.06;;;;;;;;;;;;;;;;
+
+
+Date;SampleID;SIType;WNo;SlID;TType;StTiter;Time;SampleType;PName;Surname;DayOfB;MonOfB;YearOfB;PatientID;Comm
+05/04/2022;CONTROL;14;1;TC Normals;HEp-2000;1;08:06:57;CONTROL;SSA/Ro Positive;none;none;none;none;none;none
+05/04/2022;TC;14;2;TC Normals;HEp-2000;40;08:06:57;TITER;none;none;none;none;none;none;none
+05/04/2022;TC;14;3;TC Normals;HEp-2000;80;08:06:57;TITER;none;none;none;none;none;none;none
+05/04/2022;TC;14;4;TC Normals;HEp-2000;160;08:06:57;TITER;none;none;none;none;none;none;none
+05/04/2022;TC;14;5;TC Normals;HEp-2000;320;08:06:57;TITER;none;none;none;none;none;none;none
+05/04/2022;TC;14;6;TC Normals;HEp-2000;640;08:06:57;TITER;none;none;none;none;none;none;none
+05/04/2022;CONTROL;14;7;TC Normals;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;8;TC Normals;HEp-2000;1;08:06:57;CONTROL;PBS;none;none;none;none;none;none
+05/04/2022;A948;14;9;TC Normals;HEp-2000;1;08:06:57;SCREEN;Normal 1;none;none;none;none;none;none
+05/04/2022;B936;14;10;TC Normals;HEp-2000;1;08:06:57;SCREEN;Normal 2;none;none;none;none;none;none
+05/04/2022;C949;14;11;TC Normals;HEp-2000;1;08:06:57;SCREEN;Normal 3;none;none;none;none;none;none
+05/04/2022;D958;14;12;TC Normals;HEp-2000;1;08:06:57;SCREEN;Normal 4;none;none;none;none;none;none
+05/04/2022;G941;14;13;TC Normals;HEp-2000;1;08:06:57;SCREEN;Normal 5;none;none;none;none;none;none
+05/04/2022;CONTROL;14;14;TC Normals;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;1;Optional Kits;HEp-2000;1;08:06:57;CONTROL;SSA/Ro Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;2;Optional Kits;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;3;Optional Kits;HEp-2000;1;08:06:57;CONTROL;Golgi Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;4;Optional Kits;HEp-2000;1;08:06:57;CONTROL;SSA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;5;Optional Kits;HEp-2000;1;08:06:57;CONTROL;PCNA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;6;Optional Kits;HEp-2000;1;08:06:57;CONTROL;SCL-70 Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;7;Optional Kits;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;8;Optional Kits;HEp-2000;1;08:06:57;CONTROL;SSA/Ro Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;9;Optional Kits;HEp-2000;1;08:06:57;CONTROL;PBS;none;none;none;none;none;none
+05/04/2022;CONTROL;14;10;Optional Kits;HEp-2000;1;08:06:57;CONTROL;Homogenious Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;11;Optional Kits;HEp-2000;1;08:06:57;CONTROL;ACA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;12;Optional Kits;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;13;Optional Kits;HEp-2000;1;08:06:57;CONTROL;Nucleolar Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;14;Optional Kits;HEp-2000;1;08:06:57;CONTROL;Speckled Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;1;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;SSA/Ro Positive;none;none;none;none;none;none
+05/04/2022;0409319;14;2;Pos Patients Kits;HEp-2000;1;08:06:57;SCREEN;Nucleolar, suspect Ribosmal P;none;none;none;none;none;none
+05/04/2022;0409323;14;3;Pos Patients Kits;HEp-2000;1;08:06:57;SCREEN;Centromere and SSA;none;none;none;none;none;none
+05/04/2022;0824717;14;4;Pos Patients Kits;HEp-2000;1;08:06:57;SCREEN;PM-SCL-100 and SSA;none;none;none;none;none;none
+05/04/2022;128710;14;5;Pos Patients Kits;HEp-2000;1;08:06:57;SCREEN;NuMA;none;none;none;none;none;none
+05/04/2022;0409324;14;6;Pos Patients Kits;HEp-2000;1;08:06:57;SCREEN;SSA and SSB;none;none;none;none;none;none
+05/04/2022;CONTROL;14;7;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;8;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;SSA/Ro Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;9;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;PBS;none;none;none;none;none;none
+05/04/2022;CONTROL;14;10;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;Homogenious Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;11;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;ACA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;12;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;13;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;Nucleolar Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;14;Pos Patients Kits;HEp-2000;1;08:06:57;CONTROL;Speckled Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;1;First Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;2;First Rack;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;3;First Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;4;First Rack;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;5;First Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;6;First Rack;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;7;First Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;8;First Rack;HEp-2000;1;08:06:57;CONTROL;SSA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;9;First Rack;HEp-2000;1;08:06:57;CONTROL;PBS;none;none;none;none;none;none
+05/04/2022;CONTROL;14;10;First Rack;HEp-2000;1;08:06:57;CONTROL;Homogenious Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;11;First Rack;HEp-2000;1;08:06:57;CONTROL;ACA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;12;First Rack;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;13;First Rack;HEp-2000;1;08:06:57;CONTROL;Nucleolar Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;14;First Rack;HEp-2000;1;08:06:57;CONTROL;Speckled Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;1;First Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;2;First Half;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;3;First Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;4;First Half;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;5;First Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;6;First Half;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;7;First Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;8;First Half;HEp-2000;1;08:06:57;CONTROL;SSA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;9;First Half;HEp-2000;1;08:06:57;CONTROL;PBS;none;none;none;none;none;none
+05/04/2022;CONTROL;14;10;First Half;HEp-2000;1;08:06:57;CONTROL;Homogenious Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;11;First Half;HEp-2000;1;08:06:57;CONTROL;ACA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;12;First Half;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;13;First Half;HEp-2000;1;08:06:57;CONTROL;Nucleolar Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;14;First Half;HEp-2000;1;08:06:57;CONTROL;Speckled Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;1;Last Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;2;Last Half;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;3;Last Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;4;Last Half;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;5;Last Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;6;Last Half;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;7;Last Half;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;8;Last Half;HEp-2000;1;08:06:57;CONTROL;SSA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;9;Last Half;HEp-2000;1;08:06:57;CONTROL;PBS;none;none;none;none;none;none
+05/04/2022;CONTROL;14;10;Last Half;HEp-2000;1;08:06:57;CONTROL;Homogenious Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;11;Last Half;HEp-2000;1;08:06:57;CONTROL;ACA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;12;Last Half;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;13;Last Half;HEp-2000;1;08:06:57;CONTROL;Nucleolar Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;14;Last Half;HEp-2000;1;08:06:57;CONTROL;Speckled Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;1;Last Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;2;Last Rack;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;3;Last Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;4;Last Rack;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;5;Last Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;6;Last Rack;HEp-2000;1;08:06:57;CONTROL;NuMA;none;none;none;none;none;none
+05/04/2022;CONTROL;14;7;Last Rack;HEp-2000;1;08:06:57;CONTROL;AMA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;8;Last Rack;HEp-2000;1;08:06:57;CONTROL;SSA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;9;Last Rack;HEp-2000;1;08:06:57;CONTROL;PBS;none;none;none;none;none;none
+05/04/2022;CONTROL;14;10;Last Rack;HEp-2000;1;08:06:57;CONTROL;Homogenious Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;11;Last Rack;HEp-2000;1;08:06:57;CONTROL;ACA Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;12;Last Rack;HEp-2000;1;08:06:57;CONTROL;Negative;none;none;none;none;none;none
+05/04/2022;CONTROL;14;13;Last Rack;HEp-2000;1;08:06:57;CONTROL;Nucleolar Positive;none;none;none;none;none;none
+05/04/2022;CONTROL;14;14;Last Rack;HEp-2000;1;08:06:57;CONTROL;Speckled Positive;none;none;none;none;none;none

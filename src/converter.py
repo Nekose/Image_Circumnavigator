@@ -52,17 +52,26 @@ class Converter(object):
                       "Date;SampleID;SIType;WNo;SlID;TType;StTiter;Time;SampleType;PName;Surname;DayOfB;MonOfB;YearOfB;PatientID;Comm\n"
         test_system = input_table[1][5]
         output_table = []
+        label = input("Please type a label for this scan event\n")
+        initials = input("Please type your initials for this scan event\n")
         for line in input_table[1:]:
             for pos,value in enumerate(line):
-                if pos == 0 or pos == 7:
+                if not (pos == 1 or pos == 4):
                     continue
                 for character in value:
                     if not character.isalnum() and character not in "_- ":
                         print("Invalid character detected. Slide and sample IDs may only contain alphanumeric characters, dashes, or underscores.")
                         return
+        for value in (label,initials):
+            for character in value:
+                if not character.isalnum() and character not in "_- ":
+                    print("Invalid character detected. Label and Initials may only contain alphanumeric characters, dashes, or underscores.")
+                    return
         for line in input_table[1:]:
             line[0] = f"{month}/{date}/{year}"
             line[7] = f"{hour}:{minute}:{second}"
+            line[9] = initials
+            line[15] = label
             output_table.append(";".join(line))
 
         output_filename = f"isl_{year}{month}{date}_{hour}{minute}{second}_{microsecond}_{test_system}_AFT1.csv"
