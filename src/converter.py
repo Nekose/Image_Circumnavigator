@@ -83,6 +83,6 @@ class Converter(object):
             for line in output_table:
                 file.write(line + "\n")
 
-        with open(path.join(log_path,"log.csv"), mode="a") as file:
-            file.write(f"{test_system},{label},{initials},{year}-{month}-{date} {hour}:{minute}")
+        with open(path.join(log_path,"log.csv"), mode="a",) as file:
+            file.write(f"{test_system},{label},{initials},{year}-{month}-{date} {hour}:{minute}\r")
         print("Event added to log")
