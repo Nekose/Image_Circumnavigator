@@ -7,16 +7,17 @@ import pandas as pd
 class Converter(object):
 
     @staticmethod
-    def process(inputfile,output_path):
+    def process(inputfile,output_path, log_path):
         table = Converter.import_from_file(inputfile)
         if table is None:
             return
-        return Converter.output_csv(output_path,table)
+        return Converter.output_csv(output_path,table,log_path)
 
     @staticmethod
     def import_from_file(inputfile):
         """
-        Accepts an excell file and coverts it into a ready-to-import AFT format. Filename is generated based on the TType column
+        Accepts an excell file and coverts it into a ready-to-import AFT format.
+    Filename is generated based on the TType column
         :param inputfile: directory and filename of the CSV
         :param output_path: folder to output AFT file
         :return: None
@@ -42,7 +43,7 @@ class Converter(object):
         return data_table
 
     @staticmethod
-    def output_csv(output_path,input_table):
+    def output_csv(output_path,input_table,log_path):
         datetime_object = datetime.datetime.now()
         hour, minute, second, microsecond = str(datetime_object.hour).zfill(2), str(datetime_object.minute).zfill(2), str(
             datetime_object.second).zfill(2),str(datetime_object.microsecond).zfill(2)[2:]
@@ -52,8 +53,9 @@ class Converter(object):
                       "Date;SampleID;SIType;WNo;SlID;TType;StTiter;Time;SampleType;PName;Surname;DayOfB;MonOfB;YearOfB;PatientID;Comm\n"
         test_system = input_table[1][5]
         output_table = []
-        label = input("Please type a label for this scan event\n")
-        initials = input("Please type your initials for this scan event\n")
+        lot = input("Please type the slide lot number used for this scan event\n")
+        label = input("Please describe the test event\n")
+        initials = input("Please type your initials\n")
         for line in input_table[1:]:
             for pos,value in enumerate(line):
                 if not (pos == 1 or pos == 4):
@@ -62,7 +64,7 @@ class Converter(object):
                     if not character.isalnum() and character not in "_- ":
                         print("Invalid character detected. Slide and sample IDs may only contain alphanumeric characters, dashes, or underscores.")
                         return
-        for value in (label,initials):
+        for value in (label,initials,lot):
             for character in value:
                 if not character.isalnum() and character not in "_- ":
                     print("Invalid character detected. Label and Initials may only contain alphanumeric characters, dashes, or underscores.")
@@ -71,6 +73,7 @@ class Converter(object):
             line[0] = f"{month}/{date}/{year}"
             line[7] = f"{hour}:{minute}:{second}"
             line[9] = initials
+            line[14] = lot
             line[15] = label
             output_table.append(";".join(line))
 
@@ -79,4 +82,7 @@ class Converter(object):
             file.write(header_text)
             for line in output_table:
                 file.write(line + "\n")
-        print(f"{output_filename} created in Image Navigator.\n")
+
+        with open(path.join(log_path,"log.csv"), mode="a") as file:
+            file.write(f"{test_system},{label},{initials},{year}-{month}-{date} {hour}:{minute}")
+        print("Event added to log")

@@ -8,7 +8,7 @@ if getattr(sys, 'frozen', False):
 else:
     application_path = os.path.dirname(os.path.abspath(__file__))
 
-def user_interface(input_path, output_path, logo):
+def user_interface(input_path, output_path, logo, log_path):
     with open(logo) as file:
         for line in file:
             print(line.strip("\n"))
@@ -16,9 +16,9 @@ def user_interface(input_path, output_path, logo):
     print("By Peter Rucker")
     time.sleep(2)
     os.system('cls')
-    return user_menu(input_path,output_path)
+    return user_menu(input_path,output_path,log_path)
 
-def user_menu(input_path, output_path):
+def user_menu(input_path, output_path, log_path):
     menu_choices = []
     for filename in os.listdir(input_path):
         extension = filename.split(".")[-1]
@@ -35,5 +35,5 @@ def user_menu(input_path, output_path):
             print("That isnt even a number yah dingus!")
         elif int(user_input) < len(menu_choices):
             valid_input = True
-    Converter.process(os.path.join(input_path,menu_choices[int(user_input)]),output_path)
-    return user_menu(input_path,output_path)
+    Converter.process(os.path.join(input_path,menu_choices[int(user_input)]),output_path,log_path)
+    return user_menu(input_path,output_path,log_path)
